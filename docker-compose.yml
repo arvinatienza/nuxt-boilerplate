@@ -1,0 +1,24 @@
+version: '2'
+services:
+  node:
+    image: my/nuxtjs-boilerplate
+    volumes:
+      - "./assets:/app/assets"
+      - "./components:/app/components"
+      - "./layouts:/app/layouts"
+      - "./middleware:/app/middleware"
+      - "./pages:/app/pages"
+      - "./plugins:/app/plugins"
+      - "./static:/app/static"
+      - "./store:/app/store"
+      - "./.editorconfig:/app/.editorconfig"
+      - "./.eslintrc.js:/app/.eslintrc.js"
+      - "./nuxt.config.js:/app/nuxt.config.js"
+      - "./package.json:/app/package.json"
+      - "./README.md:/app/README.md"
+    build: ./
+    ports:
+      - "3000"
+    restart: always
+
+
