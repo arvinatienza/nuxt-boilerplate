@@ -1,4 +1,4 @@
-FROM node:6.11.3
+FROM node
 MAINTAINER Arvin Atienza <arvin.atienza@gmail.com>
 
 RUN npm install --global vue-cli
